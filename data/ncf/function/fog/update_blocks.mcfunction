@@ -1,3 +1,3 @@
-execute positioned ~ ~-1 ~ if block ~ ~-1 ~ #air run function ncf:fog/update_blocks
-execute positioned ~ ~-1 ~ unless block ~ ~-1 ~ #air run setblock ~ ~ ~ snow keep
-execute positioned ~ ~-1 ~ if block ~ ~-1 ~ water run setblock ~ ~-1 ~ ice replace
+execute positioned ~ ~-1 ~ if block ~ ~-1 ~ #air unless block ~ ~-1 ~ snow unless block ~ ~-1 ~ ice run function ncf:fog/update_blocks
+execute positioned ~ ~-1 ~ unless block ~ ~-1 ~ #air unless block ~ ~-1 ~ snow unless block ~ ~-1 ~ ice run setblock ~ ~ ~ snow keep
+execute positioned ~ ~-1 ~ if block ~ ~-1 ~ water unless block ~ ~-1 ~ snow unless block ~ ~-1 ~ ice run setblock ~ ~-1 ~ ice replace
