@@ -1,4 +1,8 @@
-$particle cloud $(radius) ~ ~ 0 0 0 0.1 100
-$particle cloud ~ ~ $(radius) 0 0 0 0.1 100
-$particle cloud $(neg_radius) ~ ~ 0 0 0 0.1 100
-$particle cloud ~ ~ $(neg_radius) 0 0 0 0.1 100
+execute unless entity @e[tag=ncf.fogX1,distance=..101] run summon block_display ~ ~100 ~ {block_state:{Name:"gray_wool"},transformation:{scale:[300.0, 250.0, 1.0],translation:[-150.0f, -125.0f, -0.5f],left_rotation:[0, 0, 0, 1],right_rotation:[0, 0, 0, 1]},Tags:["ncf.fogdisplay","ncf.fogX1"]}
+execute unless entity @e[tag=ncf.fogX2,distance=..101] run summon block_display ~ ~100 ~ {block_state:{Name:"gray_wool"},transformation:{scale:[300.0, 250.0, 1.0],translation:[-150.0f, -125.0f, -0.5f],left_rotation:[0, 0, 0, 1],right_rotation:[0, 0, 0, 1]},Tags:["ncf.fogdisplay","ncf.fogX2"]}
+execute unless entity @e[tag=ncf.fogZ1,distance=..101] run summon block_display ~ ~100 ~ {block_state:{Name:"gray_wool"},transformation:{scale:[300.0, 250.0, 1.0],translation:[-150.0f, -125.0f, -0.5f],left_rotation:[0, 0, 0, 1],right_rotation:[0, 0, 0, 1]},Tags:["ncf.fogdisplay","ncf.fogZ1"]}
+execute unless entity @e[tag=ncf.fogZ2,distance=..101] run summon block_display ~ ~100 ~ {block_state:{Name:"gray_wool"},transformation:{scale:[300.0, 250.0, 1.0],translation:[-150.0f, -125.0f, -0.5f],left_rotation:[0, 0, 0, 1],right_rotation:[0, 0, 0, 1]},Tags:["ncf.fogdisplay","ncf.fogZ2"]}
+$tp @e[tag=ncf.fogX1,limit=1,sort=nearest] $(radius) ~ ~ facing ~ ~ ~ 
+$tp @e[tag=ncf.fogX2,limit=1,sort=nearest] $(neg_radius) ~ ~ facing ~ ~ ~ 
+$tp @e[tag=ncf.fogZ1,limit=1,sort=nearest] ~ ~ $(radius) facing ~ ~ ~ 
+$tp @e[tag=ncf.fogZ2,limit=1,sort=nearest] ~ ~ $(neg_radius) facing ~ ~ ~ 

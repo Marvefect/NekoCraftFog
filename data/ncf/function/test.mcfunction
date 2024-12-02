@@ -1,0 +1,1 @@
+summon block_display ~ ~ ~ {block_state:{Name:"gray_wool"},transformation:{scale:[250.0, 250.0, 1.0],translation:[-125.0f, -125.0f, -0.5f],left_rotation:[0, 0, 0, 1],right_rotation:[0, 0, 0, 1]}}
