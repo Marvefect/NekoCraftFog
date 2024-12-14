@@ -6,3 +6,4 @@ scoreboard players set 10 ncf.values 10
 scoreboard players set 50 ncf.values 50
 scoreboard players set 100 ncf.values 100
 execute unless score radius ncf.values matches 1.. run scoreboard players set radius ncf.values 10000
+execute unless score display ncf.values matches -1.. run scoreboard players set display ncf.values 1
